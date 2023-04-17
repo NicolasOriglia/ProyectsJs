@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Viaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Travel expenses</h1>
+    <div class="form__container">
+        <form action="" id="form" class="form">
+            <input type="text" placeholder="Destino" id="destino" required>
+            <input type="text" placeholder="Presupuesto" id="presupuesto" required>
+            <input type="text" placeholder="Alojamiento" id="alojamiento" required>
+            <input type="text" placeholder="Transporte" id="transporte" required>
+            <input type="text" placeholder="Comida" id="comida">
+            <input type="submit" class="submit" value="Calcular" >
+        </form>
+    </div>
+    
+    <div class="container">
+        <div class="icons">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-wallet"></i></span> 
+            <span><i class="fas fa-money-bill-wave-alt"></i></span>  
+        </div>
+
+        <div class="data">
+            <div class="result" id="result"></div>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

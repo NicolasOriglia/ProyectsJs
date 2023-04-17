@@ -1,0 +1,141 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:#39f url(https://es-static.z-dn.net/files/d71/b847a82d7ee751472dad20ab08d6537d.jpg);
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+	width:1024px;
+	min-height:768px;
+	margin:50px auto;
+	border:1px solid #fff;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	position: relative;
+}
+
+.container .background{
+	opacity: .9;
+	background-image: url(./31173-aviones.jpg);
+	background-size: cover;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+h1{
+	color:#fff;
+	text-align:center;
+	padding:110px;
+	text-shadow:1px 1px 3px #000;
+	position:relative;
+}
+
+section{
+	width:700px;
+	height:400px;
+	background:rgba(0, 0, 0, 0.3);
+	position: absolute;
+	left:162px;
+	top:150px;
+	border-top-left-radius:38px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	border:3px solid #fff;
+}
+
+article{
+	position:absolute;
+	left:6px;
+	top:6px;
+	width:680px;
+	display:none;
+}
+
+article img{
+	float:left;
+	width: 280px;
+	height: 280px;
+	background-size: cover;
+	border-top-left-radius: 30px;
+}
+
+article p{
+	font-size:1.1em;
+	line-height:1.2em;
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	float:right;
+	width:385px;
+	margin-bottom:15px;
+}
+
+article span.amarillo{
+	color:yellow;
+}
+
+article span.verde{
+	color:rgba(103,241,103,1.00);
+}
+
+nav{
+	width:700px;
+	height:60px;
+	border:3px solid #fff;
+	position:absolute;
+	left:162px;
+	top:565px;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:38px;
+	background:rgba(0, 0, 0, 0.3);
+}
+
+nav ul{
+	list-style:none;
+	margin-top:22px;
+}
+
+nav ul li{
+	width:33%;
+	float:left;
+	text-align:center;
+}
+
+nav ul li a:link, nav ul li a:visited{
+	text-decoration:none;
+	border:1px #fff solid;
+	color:#fff;
+	padding:15px 75px;
+}
+
+nav ul li:last-child a:link,  nav ul li:last-child a:visited{
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:38px;
+}
+
+nav ul li a:hover{
+	background:#fff;
+	color:#666;
+}
+
+section #second, #third{
+	display: none;
+}
+
+section #first{
+	display: block;
+}

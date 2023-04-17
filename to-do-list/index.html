@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&family=Oswald:wght@400;500;700&family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>My List</h1>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="date__left">
+                <div class="date__number" id="dateNumber"></div>
+                <div>
+                    <div class="date__month" id="dateMonth"></div>
+                    <div class="date__year" id="dateYear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="date__text" id="dateText"></div>
+
+        <form action="" id="form" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="New task" class="roundBorder">
+            <button type="submit" class="addTaskBtn">+</button>
+            <button type="button" class="orderBtn roundBorder" id="btn">Ordenar</button>
+        </form>
+        <div id="tasksContainer"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

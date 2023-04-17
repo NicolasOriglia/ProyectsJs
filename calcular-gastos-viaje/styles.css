@@ -1,0 +1,95 @@
+/* GENERAL */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d4d4d4;
+}
+
+.title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+    background-color: #005161;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.form__container{
+    padding: 60px;
+    max-width: 400px;
+    background-color: #E7E7E7;
+    margin: 40px auto;
+    border-radius: 6px;
+}
+
+.form input{
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: none; 
+    color: #525c66; 
+    font-size: 1em;
+    resize: none; 
+}
+
+.form input.submit {
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #005161;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.form input.submit:hover {
+    background: rgb(138, 80, 138);
+}
+
+.form input.submit:active {
+    transform: translateY(4px);
+}
+
+.container .icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.fas {
+    font-size: 2.4em;  
+    padding: 50px;
+}
+
+.fa-plane {
+    color: #005161;
+}
+.fa-wallet {
+    color: #a98e65;
+}
+.fa-money-bill-wave-alt{
+    color: #1beb72;
+}  
+
+.container-data {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -1em;
+}
+  
+.container-data h4 {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+

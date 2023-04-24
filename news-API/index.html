@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Noticias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MUNDO NOTICIAS</h1>
+        <header>
+            <nav>
+                <span class="category" onclick="buscar('tecnologia')">Tecnologia</span>
+                <span class="category" onclick="buscar('Programacion')">Programacion</span>
+                <span class="category" onclick="buscar('Deportes')">Deportes</span>
+                <span class="category" onclick="buscar('Economia')">Economia</span>
+                <span class="category" onclick="buscar('Educacion')">Educacion</span>
+            </nav>
+
+            <div class="search">
+                <input type="text" id="search" placeholder="Search for News">
+                <button class="btn-search">Buscar</button>
+            </div>
+        </header>
+
+        <div class="container__news">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

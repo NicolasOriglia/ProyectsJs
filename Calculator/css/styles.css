@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, hsl(173deg, 100%, 50%), #fff);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(94, 94, 94);
+  background-color: #fff;
+}
+.calculator #display {
+  color: rgb(94, 94, 94);
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  border: solid 4px rgb(94, 94, 94);
+  margin: 30px 0;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.calculator #clear {
+  color: rgb(0, 0, 0);
+  background-color: hsl(54deg, 100%, 58%);
+}
+.calculator #equal {
+  height: 120px;
+}
+.calculator .btn-number {
+  color: #fff;
+  background-color: rgb(126, 125, 125);
+}
+.calculator .btn-operator {
+  background-color: rgb(149, 255, 243);
+  color: #000;
+}
+.calculator .btn-equal {
+  background-color: hsl(54deg, 100%, 58%);
+  color: #000;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+}
+.calculator.dark #display {
+  color: #fff;
+}
+.calculator.dark #clear {
+  background-color: #3b3f64;
+  color: #fff;
+}
+.calculator.dark .btn-operator {
+  background-color: hsl(45deg, 100%, 58%);
+}
+.calculator.dark .btn-equal {
+  background-color: #3b3f64;
+  color: #fff;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+}
+
+.theme-toggler.active {
+  color: #000;
+}
+.theme-toggler.active::before {
+  background-color: #fff;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(0.9);
+}/*# sourceMappingURL=styles.css.map */

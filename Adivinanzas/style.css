@@ -1,0 +1,120 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2b2553;
+    display: flex;
+}
+
+.main{
+    margin: 0;
+    max-height: 750px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    grid-template-columns: 1fr;
+}
+
+.main > * {
+    grid-column: 1 / -1;
+}
+
+.riddles__title{
+    padding: 40px 10px ;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    color: aliceblue;
+}
+
+.riddles__form{
+    display: flex;
+    width: 60%;  
+}
+
+.riddles__form .btn{
+    width: 30%;
+    color: aliceblue;
+    background-color: #3b3755;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#riddle__reply{
+    width: 70%;
+    border: none;
+    color: aliceblue;
+    background-color: #3b3755;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.riddles__container{
+    width: 60%;
+    font-family: 'Chakra Petch', sans-serif ;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: #3b3755;
+    color: aliceblue;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.riddles__errors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.riddles__errors .error{
+    width: 60px;
+    height: 60px;
+    padding: 25px;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    margin-right: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.riddles__errors i {
+    font-size: 56px;
+    color: #ff0000;
+}
+
+.final__sms-win, .final__sms-lose{
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0px 20px;
+    font-size: 38px;
+}
+
+.final__sms-win{
+    color: greenyellow;
+    padding: 0;
+}
+.final__sms-win .total-errors{
+    font-size: 16px;
+    color: #000;
+}
+
+.final__sms-lose{
+    color: #ff0000;
+    padding: 0;
+}
+

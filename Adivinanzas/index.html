@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6eafd8c5ca.js" crossorigin="anonymous"></script>
+    <title>Adivinanzas</title>
+</head>
+<body>
+    <section class="main">
+        <h2 class="riddles__title" id="title">Level - 1 :</h1>
+
+        <div class="riddles__form">
+            <input type="text" placeholder="intente adivinar.." id="riddle__reply">
+            <input type="submit" class="btn" value="Responder">
+        </div>
+
+        <div class="riddles__container">
+            <p id="riddle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero dolor omnis vel voluptate. Ea quaerat
+                 dolorem eos totam adipisci eveniet praesentium optio, veritatis ut molestiae ullam, voluptatibus ex unde.
+            </p>
+        </div>
+
+        <div class="riddles__errors">
+            <div class="error"></div>
+            <div class="error"></div>
+            <div class="error"></div>
+        </div>
+
+        <section class="final__sms-win">
+            <p> Your Win </p>
+            <p class="total-errors"></p>
+        </section>
+        <section class="final__sms-lose">
+            <p> Game Over </p>
+        </section>
+    </section>  
+    
+    <script src="script.js"></script>
+</body>
+</html>

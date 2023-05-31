@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #23242a;
+}
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: "";
+    width: 380px;
+    height: 420px;
+    border-radius: 8px;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(0deg, transparent, transparent, #ff744a,#ff744a,#ff744a);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 5px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h2{
+    color: #ff744a;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.box form .input-box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.box form .input-box input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: .05em;
+    transition: .3s;
+    z-index: 10;
+}
+
+.box form .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: .05em;
+    transition: .5s;
+}
+
+.box form .input-box input:valid ~ span,
+.box form .input-box input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.box form .input-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #8f8f8f;
+    overflow: hidden;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.box form .input-box input:valid ~ i,
+.box form .input-box input:focus ~ i{
+    height: 44px;
+    border-radius: 5px 5px 0 0;
+}
+
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box form .links a {
+    margin: 10px 0;
+    font-size: .75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2){
+    color: #fff;
+}
+
+.box form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: .9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 40px;
+}
+
+.box form input[type="submit"]:active{
+    opacity: .8;
+}
